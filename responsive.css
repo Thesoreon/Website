@@ -26,41 +26,7 @@
     }
 
     body {
-        padding-top: 14.8em;
-    }
-
-  .main { flex: 2 0px; }
-
-  .aside-1 { order: 1;  flex: 1 100%; }
-  .main    { order: 2; }
-  .aside-2 { order: 3;  flex: 1 100%; }
-  .footer  { order: 4; }
-
-}
-
-@media (max-width: 320px) {
-
-    .navigation {
-        flex-flow: column wrap;
-    }
-
-    .navigation li {
-        float: inherit; /* We are inheriting float to make navigation resizing works properly*/
-    }
-
-    .navigation a {
-    text-align: center;
-    padding: 10px;
-    border-top: 1px solid rgba(255, 255, 255, 0.3);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    }
-
-    .navigation li:last-of-type a {
-    border-bottom: none;
-    }
-
-    body {
-        padding-top: 18em;
+        padding-top: 16.5em;
     }
 
   .main { flex: 2 0px; }
