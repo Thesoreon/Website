@@ -25,10 +25,10 @@ footer {
 }
 
 .aside-1 {
-	padding: 10px;
-  	background: gold;
+  padding: 10px;
+  background: gold;
 
-  	order: 1;
+  order: 1;
 }
 
 .aside-2 {
@@ -39,29 +39,33 @@ footer {
 }
 
 .navigation ul {
-    width: 100%;
-    margin: 0px; /* for removing white bar above the navigation*/
-    padding: 0px; /* This prevent gap on left side of navigation*/
-    position: fixed;
-    top: 0;
-    background-color: gray;
-    list-style-type: none;
+  width: 100%;
+  margin: 0px; /* for removing white bar above the navigation*/
+  padding: 0px; /* This prevent gap on left side of navigation*/
+  position: fixed;
+  top: 0;
+  background-color: gray;
+  list-style-type: none;
 }
 
 .navigation li {
-    background-color: gray;
-    float: left;
+  background-color: gray;
+  float: left;
 }
 
 .navigation a {
+
   text-decoration: none;
   display: block;
   padding: 1em;
   color: white;
+
+  transition: background-color .7s ease-in-out;  
 }
 
 .navigation a:hover {
-  background: #00b7f5;
+  background-color: tomato;
+  transition: background-color .7s ease-in-out;
 }
 
 .active {
