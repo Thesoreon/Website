@@ -6,6 +6,10 @@
 
 @media (max-width: 600px) {
 
+	.specialni {
+		display: inherit;
+	}
+
 	.Handle {
 		visibility: visible;
 	}
@@ -30,7 +34,7 @@
     }
 
     body {
-        padding-top: 14.9em;
+        padding-top: 17.4em;
     }
 
   .main { flex: 2 0px; }
