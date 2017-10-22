@@ -60,6 +60,14 @@ footer {
   order: 2;
 }
 
+.main dt {
+  font-weight: bold;
+}
+
+.main dd {
+  margin-left: 1px;
+}
+
 .aside-1 {
   padding: 10px;
   background: gold;
@@ -75,7 +83,7 @@ footer {
 }
 
 .active {
-	background-color: green;
+	background-color: #0ace4b;
 }
 
 .Handle { 
@@ -94,7 +102,7 @@ footer {
   padding-bottom: 10.2px;
   color: white;
   text-align: center;
-  font-size: 17px;
+  font-size: 1.0625em;
 }
 
 .specialni {
