@@ -1,5 +1,7 @@
 var isActive = true;
+var isTableActive = true;
 var nav = document.getElementById("navigation");
+var table = document.getElementsByClassName("info");
 
 function closeMenu() {
 
@@ -13,6 +15,18 @@ function closeMenu() {
 	}
 
 	isActive = !isActive;
+}
+
+function closeTable() {
+	
+	if(isTableActive) {
+		table[0].style.visibility = "hidden";
+	}
+	else {
+		table[0].style.visibility = "visible";
+	}
+
+	isTableActive = !isTableActive;
 }
 
 window.onresize = function() {
