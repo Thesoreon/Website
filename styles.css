@@ -122,6 +122,10 @@ footer {
   padding-bottom: 10px;
 }
 
+.info tr > :first-child {
+  width: 5%;
+}
+
 .info {
   margin-bottom: 10px;
 }
