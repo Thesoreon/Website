@@ -29,102 +29,50 @@
 
 <article class="main">
 <br />
- Co dokážu vytvořit pomocí HTML?
+ <strong onclick="toggleInfo()" style="cursor: pointer;">Forms</strong>
+ <hr />
+<form  class="form" action="../test.php" target="_self" method="post"> <!-- action atribut udává, kde se inputy zpracují, method specifikuje http metodu, která se má použít při zpracování -->
+   <!--- <fieldset>  Fieldset slouží k seskupení "příbuzných" dat -->
+    <!--- <legend>Testovací form</legend> - Slouží jako nadpis formuláře -->
+	<p>This is text input <input type="text" name="test"></p> <!-- input typu textového pole -->
+	<p>This is radio input <input type="radio" name="test"></p> <!-- input typu zaškrtávacího čudlíku-->
+	<p>This is submit input <input type="submit" name="test"></p> <!-- input typu tlačítko -->
+   <!---</fieldset> -->
+   <p>This is select option <select name="Test" size="1">  <!--- Size ukazuje, kolik je v defaultnim stavu zobrazeno možností -->
+	<option value="test1">Test1</option>
+	<option value="test2" selected>Test2</option> <!--- Selected nastavuje, co je nastaveno defaultně-->
+	<option value="test3">Test3</option></select></p>
 
-<button onclick="closeTable()">Tabulka</button>
+	<p>This is textarea <textarea name="message" rows="1" cols="30">Textarea Text</textarea></p> <!--- rows je pocet řádků, cols je počet sloupců -->
 
-<table class="info" style="width: 99.7%;">
-	<tr>
-		<th><strong>NAZEV</strong></th>
-		<th><strong>CO TO UMI</strong></th>
-		<th><strong>TAGY</strong></th>
-	</tr>
-	<tr>
-		<th>Headings</th>
-		<th>Vytvoří nadpis, užitečný pro search engines</th>
-		<th>&#60;h1&#62; - &#60;h6&#62;</th>
-	</tr>
-	<tr>
-		<th>Paragraphs</th>
-		<th>Udělá z textu odstavec</th>
-		<th>&#60;p&#62;</th>
-	</tr>
-	<tr>
-		<th>Formatting</th>
-		<th>Formátování textu</th>
-		<th>&#60;b&#62;/&#60;strong&#62;, &#60;i&#62;/&#60;em&#62; atd.</th>
-	</tr>
-	<tr>
-		<th>Quotation</th>
-		<th>Vytvoří z textu citát</th>
-		<th>&#60;q&#62;, &#60;blockquote&#62;, &#60;abbr&#62;, &#60;address&#62;, &#60;cite&#62;, &#60;bdo&#62;</th>
-	</tr>
-	<tr>
-		<th>Links</th>
-		<th>Odkaz na soubor či hypertextový odkaz</th>
-		<th>Attributy: _blank, _self, _parent, _top, framename, href, src. Tagy: &#60;a&#62;, &#60;img&#62;. Lze vytvořit bookmarky přidáním ID elementu do href attributu</th>
-	</tr>
-	<tr>
-		<th>Images</th>
-		<th>Vloží obrázek na webovou stránku, area: obrazek s klikatelnymi oblastmi, picture: "pole" obrázků</th>
-		<th>Attributy: src, alt. Tagy: &#60;img&#62;, &#60;area&#62;, &#60;picture&#62;</th>
-	</tr>
-	<tr>
-		<th>Tables</th>
-		<th>Vytvoří tabulkový layout, který jde následně upravit pomocí CSS</th>
-		<th>&#60;table&#62; rows: &#60;tr&#62; header: &#60;th&#62; table cell: &#60;td&#62;, &#60;colspan&#62;, &#60;rowspan&#62;</th>
-	</tr>
-	<tr>
-		<th>Lists</th>
-		<th>Vytvoří list (seznam) věcí</th>
-		<th>unordered list: &#60;ul&#62;, ordered list: &#60;ol&#62;, description list: &#60;dl&#62;</th>
-	</tr>
-	<tr>
-		<th>Blocks</th>
-		<th>Blockové elementy zabírají vždy největší šířku, co mohou</th>
-		<th>&#60;div&#62;, &#60;h1-6&#62;, &#60;p&#62;, &#60;form&#62;...</th>
-	</tr>
-	<tr>
-		<th>Inline</th>
-		<th>Inline elementy zabiraji sirku, co potrebuji</th>
-		<th>&#60;span&#62;, &#60;a&#62;, &#60;img&#62;</th>
-	</tr>
-	<tr>
-		<th>Iframes</th>
-		<th>Vytvoří okno na webové stránce, jenž zobrazí odkazovanou stránku</th>
-		<th>Attributy: src Tagy: &#60;iframe&#62;</th>
-	</tr>
-	<tr>
-		<th>Layout</th>
-		<th>Rozložení stránky</th>
-		<th>Varianty: float property, css framework, css flexbox, html tables</th>
-	</tr>
-	<tr>
-		<th>Responsive</th>
-		<th>Zaručení, aby stránka vypadala dobře na všech zařízeních</th>
-		<th>Nastavení metadat, vyuziti "scalovacich" jednotek, vyuziti media queries</th>
-	</tr>
-	<tr>
-		<th>Computer Code</th>
-		<th>Styl písma ovlivněn computer codem</th>
-		<th>&#60;code&#62; definuje programming code, &#60;kbd&#62; definuje keyboard input, &#60;samp&#62; definuje computer output, &#60;var&#62; definuje promennou</th>
-	</tr>
-	<tr>
-		<th>Entities</th>
-		<th>Speciální symboly apod.</th>
-		<th>Speciální ASCII tabulka</th>
-	</tr>
-	<tr>
-		<th>Encoding</th>
-		<th>Výběr "značkovací" sady</th>
-		<th>Napriklad nejpouzivanejsi UTF-8</th>
-	</tr>
-	<tr>
-		<th>XHTML</th>
-		<th>"Odrůda" html akorát striktnější kvůli kompatibility s XML</th>
-		<th>Uzavírání nepárových tagu, psaní tagu malými písmeny</th>
-	</tr>
-</table>
+	<p>This is datalist <input list="Browsers"><datalist id="Browsers"> <!-- Atribut list v inputu musí referovat na id datalistu => musí býti stejné -->
+		<option value="Explorer"></option>
+		<option value="Chrome"></option>
+		<option value="Mozilla"></option>
+	</datalist></p>
+
+	<p>Input type checkbox <input type="checkbox"></p>
+	<p>Input type password <input type="password"></p> <!--Definuje password field -->
+	<p>Input typ reset <input type="reset"></p> <!-- Resetuje všechny položky v momentálním formuláře na default -->
+
+	<!-- HTML5 Input types -->
+
+	<p>Input type color <input type="color"></p>
+	<p>Input type date <input type="date" min="2000-01-02"></p> <!-- lze nastavit min a max hodnotu, kterou může uživatel zadat -->
+
+	<p>Input type email <input type="email"></p>
+	<p>Input type number <input type="number" min="1" max="5"></p> <!-- Input pouze pro čísla od 1 do 5-->
+
+	<!-- Input restrictions: disabled, max, maxLength, min, pattern, readonly, required, size, step, value -->
+
+	<p>Input type Range <input type="Range" min="0" max="50" value="10"></p> <!-- Slider od hodnoty 0 do 50 s defaultni hodnotou 10 -->
+
+	<p>Input type search <input type="search"></p> <!-- Chová se jako textbox -->
+
+	<!-- Dalsi inputy: week, url, time, tel -->
+</form>
+
+
 </article>
 
  <footer>

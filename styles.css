@@ -33,6 +33,10 @@
   transition: background-color .7s ease-in-out; /* Transition for changing the color of the a element */
 }
 
+hr {
+  margin-right: 5px;
+}
+
 body {
   padding-top: 50px;
   margin: 0px; /* This makes to prevent white slides on sides */
@@ -59,14 +63,6 @@ footer {
 
   flex: 3 0px;
   order: 2;
-}
-
-.main dt {
-  font-weight: bold;
-}
-
-.main dd {
-  margin-left: 1px;
 }
 
 .aside-1 {
@@ -108,26 +104,4 @@ footer {
 
 .specialni {
   display: none;
-}
-
-.info th, tr, table {
-  border: 1px solid black;
-  border-collapse: collapse;
-}
-
-
-.info th {
-  padding-left: 5px;
-  width: 33.3%;
-  font-weight: normal;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.info tr > :first-child {
-  width: 5%;
-}
-
-.info {
-  margin: 10px 0px 10px 0px;
 }

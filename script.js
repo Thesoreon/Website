@@ -1,7 +1,7 @@
 var isActive = true;
-var isTableActive = true;
+var isFormActive = true;
 var nav = document.getElementById("navigation");
-var table = document.getElementsByClassName("info");
+var info = document.getElementsByClassName("form");
 
 function closeMenu() {
 
@@ -17,16 +17,16 @@ function closeMenu() {
 	isActive = !isActive;
 }
 
-function closeTable() {
-	
-	if(isTableActive) {
-		table[0].style.visibility = "hidden";
+function toggleInfo() {
+
+	if(isFormActive) {
+		info[0].style.display = "none";
 	}
 	else {
-		table[0].style.visibility = "visible";
+		info[0].style.display = "block";
 	}
 
-	isTableActive = !isTableActive;
+	isFormActive = !isFormActive;
 }
 
 window.onresize = function() {
