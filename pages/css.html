@@ -28,10 +28,50 @@
 		<span class="Handle" onclick="closeMenu()">MENU</span>
 
 <article class="main">
+<br />
+ <strong onclick="toggleInfo(0)" style="cursor: pointer;">Introduction</strong>
+<hr />
+  <div class="info">
+  	CSS3 je rozděleno do tzv. "Modulů"
+  	<ul>
+  		<li>Selectors</li>
+  		<li>Box Model</li>
+  		<li>Backgrounds and borders</li>
+  		<li>Image Values and replaced content</li>
+  		<li>Text effects</li>
+  		<li>2D/3D transformations</li>
+  		<li>Animations</li>
+  		<li>Multiple Column Layout</li>
+  		<li>User interface</li>
+  	</ul>
+  </div>
 
+ <strong onclick="toggleInfo(1)" style="cursor: pointer;">Rounded, image-borders</strong>
+<hr />
+  <div class="info">
+  	Rounded borders = Property: border-radius: value; <br />
+  	Image borders = Property: border-image: url(example.url) int round;
+  </div>
+
+ <strong onclick="toggleInfo(2)" style="cursor: pointer;">Backgrounds</strong>
+<hr />
+  <div class="info">
+  	Multiple backgrounds = Property: background-image: url(example.png), url(example2.png);<br />
+  	Size of backgrounds = Property: background-size: height, width; Další hodnoty: contain a cover.<br />
+  	Origin of backgrounds = Property: border-box, padding-box, content-box;<br />
+  	Background clip = Property: border-box, padding-box, content-box;<br />
+
+  	"Full Size background image" = využití html selectoru a hodnoty cover.
+  </div>
+
+
+
+
+
+
+
+<br />
 </article>
-
-
  <footer>
  	© Pavel Sušický 2017
  </footer>

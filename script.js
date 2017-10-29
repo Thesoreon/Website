@@ -1,7 +1,7 @@
 var isActive = true;
-var isFormActive = true;
+var isFormActive = false;
 var nav = document.getElementById("navigation");
-var info = document.getElementsByClassName("form");
+var info = document.getElementsByClassName("info");
 
 function closeMenu() {
 
@@ -17,13 +17,13 @@ function closeMenu() {
 	isActive = !isActive;
 }
 
-function toggleInfo() {
+function toggleInfo(x) {
 
 	if(isFormActive) {
-		info[0].style.display = "none";
+		info[x].style.display = "none";
 	}
 	else {
-		info[0].style.display = "block";
+		info[x].style.display = "block";
 	}
 
 	isFormActive = !isFormActive;

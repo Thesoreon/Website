@@ -29,16 +29,16 @@
 
 <article class="main">
 <br />
- <strong onclick="toggleInfo()" style="cursor: pointer;">Forms</strong>
+ <strong onclick="toggleInfo(0)" style="cursor: pointer;">Forms</strong>
  <hr />
-<form  class="form" action="../test.php" target="_self" method="post"> <!-- action atribut udává, kde se inputy zpracují, method specifikuje http metodu, která se má použít při zpracování -->
+<form  class="info" action="../test.php" target="_self" method="post"> <!-- action atribut udává, kde se inputy zpracují, method specifikuje http metodu, která se má použít při zpracování -->
    <!--- <fieldset>  Fieldset slouží k seskupení "příbuzných" dat -->
     <!--- <legend>Testovací form</legend> - Slouží jako nadpis formuláře -->
 	<p>This is text input <input type="text" name="test"></p> <!-- input typu textového pole -->
 	<p>This is radio input <input type="radio" name="test"></p> <!-- input typu zaškrtávacího čudlíku-->
 	<p>This is submit input <input type="submit" name="test"></p> <!-- input typu tlačítko -->
-   <!---</fieldset> -->
-   <p>This is select option <select name="Test" size="1">  <!--- Size ukazuje, kolik je v defaultnim stavu zobrazeno možností -->
+    <!---</fieldset> -->
+    <p>This is select option <select name="Test" size="1">  <!--- Size ukazuje, kolik je v defaultnim stavu zobrazeno možností -->
 	<option value="test1">Test1</option>
 	<option value="test2" selected>Test2</option> <!--- Selected nastavuje, co je nastaveno defaultně-->
 	<option value="test3">Test3</option></select></p>
@@ -71,6 +71,9 @@
 
 	<!-- Dalsi inputy: week, url, time, tel -->
 </form>
+
+<strong>Something</strong>
+<hr />
 
 
 </article>
