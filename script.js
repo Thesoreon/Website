@@ -10,7 +10,7 @@ function closeMenu() {
 	}
 	else {
     	nav.style.visibility = "visible";
-    	document.body.style.paddingTop = "17.4em";
+    	document.body.style.paddingTop = "18em";
 	}
 
 	isActive = !isActive;
