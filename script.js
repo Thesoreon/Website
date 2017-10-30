@@ -1,5 +1,4 @@
 var isActive = true;
-var isFormActive = false;
 var nav = document.getElementById("navigation");
 var info = document.getElementsByClassName("info");
 
@@ -19,14 +18,12 @@ function closeMenu() {
 
 function toggleInfo(x) {
 
-	if(isFormActive) {
+	if(info[x].style.display == "block") {
 		info[x].style.display = "none";
 	}
 	else {
 		info[x].style.display = "block";
 	}
-
-	isFormActive = !isFormActive;
 }
 
 window.onresize = function() {
