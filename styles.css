@@ -8,7 +8,7 @@
   padding: 0px; /* This prevent gap on left side of navigation*/ 
   position: fixed; /* This makes the navigation stay on the same position, when scrolling */
   top: 0; 
-  background-color: gray; 
+  background-color: #3C3D3E; 
   list-style-type: none; /* This hides points before list items */ 
   box-shadow: black 0px 3px 20px; /* This makes shadow under navigation */
 }
@@ -22,14 +22,14 @@
   text-decoration: none;
   display: block; 
   padding: 1em; /* This makes the navigation looks bigger */
-  color: white;
+  color: #F7F7F7;
 
-  transition: background-color .7s ease-in-out; /* Transition for changing the color of the a element */
+  transition: background-color .7s linear; /* Transition for changing the color of the a element */
 }
 
 #navigation a:hover {
-  background-color: tomato;
-  transition: background-color .7s ease-in-out; /* Transition for changing the color of the a element */
+  background-color: #002328;
+  transition: background-color .7s linear; /* Transition for changing the color of the a element */
 }
 
 hr {
@@ -48,8 +48,9 @@ body {
 
 footer {
   padding: 15px;
-  background-color: orange;
-  border-top: 5px solid #cc7a00;
+  background-color: #3C3D3E;
+  border-top: 5px solid #002328;
+  color: #F7F7F7;
 
   margin-top: auto; /* This makes the footer be at the bottom of the page */ 
 
@@ -71,6 +72,15 @@ footer {
 .main span {
   cursor: pointer;
   font-weight: bold;
+  margin-right: 5px;
+  display: block;
+
+  transition: background 1s linear;
+}
+
+.main span:hover {
+  background: #59A5D8;
+  transition: background 1s linear;
 }
 
 .aside-1 {
@@ -88,7 +98,7 @@ footer {
 }
 
 .active {
-	background-color: #0ace4b;
+	background-color: #1EA896;
 }
 
 .Handle { 
@@ -97,7 +107,8 @@ footer {
   right: 0;
   top: 0;
 
-  background-color: #3e4444;
+  background-color: #00D8FF;
+  color: #3C3D3E;
   
   visibility: hidden;
   display: block;
@@ -105,7 +116,6 @@ footer {
 
   padding-top: 10.2px;
   padding-bottom: 10.2px;
-  color: white;
   text-align: center;
   font-size: 1.0625em;
 }

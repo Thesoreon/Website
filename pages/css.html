@@ -64,9 +64,110 @@
   	"Full Size background image" = využití html selectoru a hodnoty cover.
   </div>
 
+  <span onclick="toggleInfo(3)">Gradients</span>
+<hr />
+  <div class="info">
+  	Gradients nám dovolují vytvořit přechody mezi dvěma a více barvami<br />
 
+  	Linear - jdoucí od down/up/left/right/diagonally<br />
+  	Radial - definovány jejich středem<br />
+  	Syntax linear: background: linear-gradient(směr, barva, barva,..);<br />
+  	Syntax radial: background: radial-gradient(shape size, barva, barva)<br />
+  </div>
 
+  <span onclick="toggleInfo(4)">Shadows</span>
+<hr />
+  <div class="info">
+  	Text shadow = Property: text-shadow: horizontalShadow verticalShadow blur color;<br />
+  	Box shadow = Property: box-shadow: horizontalShadow verticalShadow blur color;<br />
 
+  	Pro více stínů na jednom elementu se dělí čárkou
+  </div>
+
+  <span onclick="toggleInfo(5)">Text</span>
+<hr />
+  <div class="info">
+  	Text overflow = Property: text-overflow: ellipsis/clip;<br />
+  	Word wrap = Property: word-wrap: break-word;<br />
+  	Word break = Property: break-all, keep-all;<br />
+  </div>
+
+  <span onclick="toggleInfo(6)">Fonts</span>
+<hr />
+  <div class="info">
+  	Font formáty: TTF, OTF, WOFF, SVG, EOT<br />
+  	@font-face rule, Syntax = @font-face {font-family: name; src: url(example.woff); }<br />
+  </div>
+
+  <span onclick="toggleInfo(7)">Transforms 2D and 3D</span>
+<hr />
+  <div class="info">
+  	<ul>
+  		<li>Translate</li>
+  		<li>Rotate</li>
+  		<li>Scale</li>
+  		<li>SkewX</li>
+  		<li>SkewY</li>
+  		<li>Matrix</li>
+  	</ul>
+
+  	Translate(x, y);<br />
+  	Rotate(deg);<br />
+  	Scale(hodnota, hodnota);<br />
+  	Skew(deg, deg);<br />
+  	Matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY())<br />
+
+  	<br /><strong>For 3D Transform:</strong><br />
+  	RotateX, RotateY and RotateZ<br />
+  </div>
+
+  <span onclick="toggleInfo(8)">Transitions</span>
+<hr />
+  <div class="info">
+  		Transitions dovolují průběžné měnění properties z jedné hodnoty na druhou při daném čase<br />
+  		<br />Speed Curve of the Transition<br />
+
+  		<ul>
+  			<li>Ease</li>
+  			<li>Linear</li>
+  			<li>ease-in</li>
+  			<li>ease-out</li>
+  			<li>ease-in-out</li>
+  			<li>cubic-bezier(n, n, n, n)</li>
+  		</ul>
+
+  		Transition delay, duration, property, timing function
+  </div>
+
+  <span onclick="toggleInfo(9)">Animations</span>
+<hr />
+  <div class="info">
+  		Animations dovolují průběžné měnení properties z jedné hodnoty na druhou (několik na jednou, kolikrát chceme)<br />
+  		Pro použití animací musíme prvně specifikovat keyframes pro animaci.<br />
+
+  		Syntax = @keyframes nazev {from {property: value; } to {property: value; } }<br />
+  		Pro použití animace, musíme ji nabindovat k elementu = animation-name: nazev; animation-duration: 0s; animation-delay: 0s; animation-iteration-count: infinite; animation-timing-function
+
+  		<br />Speed Curve of the Animation<br />
+
+  		<ul>
+  			<li>Ease</li>
+  			<li>Linear</li>
+  			<li>ease-in</li>
+  			<li>ease-out</li>
+  			<li>ease-in-out</li>
+  			<li>cubic-bezier(n, n, n, n)</li>
+  		</ul>
+  </div>
+
+  <span onclick="toggleInfo(10)">Images</span>
+<hr />
+  <div class="info">
+  		Border-radius: value;
+
+  		Rensposive image: selector {max-width: 100%; height: auto;}<br />
+  		Center image: selector {display: block; margin: auto;}
+  </div>
 
 
 
