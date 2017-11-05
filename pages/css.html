@@ -28,7 +28,7 @@
 		<span class="Handle" onclick="closeMenu()">MENU</span>
 
 <article class="main">
-<br />
+<h2>CSS3</h2>
  <span onclick="toggleInfo(0)">Introduction</span>
 <hr />
   <div class="info">
@@ -71,8 +71,8 @@
 
   	Linear - jdoucí od down/up/left/right/diagonally<br />
   	Radial - definovány jejich středem<br />
-  	Syntax linear: background: linear-gradient(směr, barva, barva,..);<br />
-  	Syntax radial: background: radial-gradient(shape size, barva, barva)<br />
+  	Syntax linear = Property: background: linear-gradient(směr, barva, barva,..);<br />
+  	Syntax radial = Property: radial-gradient(shape size, barva, barva)<br />
   </div>
 
   <span onclick="toggleInfo(4)">Shadows</span>
@@ -96,7 +96,7 @@
 <hr />
   <div class="info">
   	Font formáty: TTF, OTF, WOFF, SVG, EOT<br />
-  	@font-face rule, Syntax = @font-face {font-family: name; src: url(example.woff); }<br />
+  	@font-face rule, Property: @font-face {font-family: name; src: url(example.woff); }<br />
   </div>
 
   <span onclick="toggleInfo(7)">Transforms 2D and 3D</span>
@@ -136,7 +136,7 @@
   			<li>cubic-bezier(n, n, n, n)</li>
   		</ul>
 
-  		Transition delay, duration, property, timing function
+  		<div class="tip">Shorthand-property: Transition delay, duration, property, timing function;</div>
   </div>
 
   <span onclick="toggleInfo(9)">Animations</span>
@@ -165,14 +165,78 @@
   <div class="info">
   		Border-radius: value;
 
-  		Rensposive image: selector {max-width: 100%; height: auto;}<br />
-  		Center image: selector {display: block; margin: auto;}
+  		Rensposive image = Property: selector {max-width: 100%; height: auto;}<br />
+  		Center image = Property: selector {display: block; margin: auto;}<br />
+  		Flipped image = Property: transform: scaleX(-1);<br />	
   </div>
 
+  <span onclick="toggleInfo(11)">Object Fit</span>
+<hr />
+  <div class="info">
+  		Object-fit definuje, jak se měla změnit velikost obrázku či videa, tak aby vyplnila svůj container<br />
+  		Property: object-fit: cover, contain, fill, none, scale-down; 
+  </div>
 
+  <span onclick="toggleInfo(12)">Multi-column Layout</span>
+<hr />
+  <div class="info">
+  		Property: column-count: value; column-gap: value; column-rule-style; column-rule-width; column-rule-color;<br />
+  		<div class="tip">Shorthand property: colum-rule-width column-rule-style column-rule-color;</div>
+  </div>
+
+  <span onclick="toggleInfo(13)">User interface</span>
+<hr />
+  <div class="info">
+  		Definuje zda může být nějaký element upravován uživatelem.<br />
+
+  		Resizing = Property: resize: horizontal/vertical/both;<br /><br />
+  </div>
+
+  <span onclick="toggleInfo(14)">Box sizing</span>
+<hr />
+  <div class="info">
+  		Dovoluje nám připočítat padding a border properties do celkové výšky a šířky elementu.<br />
+
+  		Box-sizing: border-box;<br />
+  </div>
+
+  <span onclick="toggleInfo(15)">Flexbox</span>
+<hr />
+  <div class="info">
+  		Nejnovější způsob layoutu v CSS3.<br />
+
+  		Flex container = Container musí mít nastaveno tyto properties: Display: flex/inline-flex;<br />
+  		Flex items = jejich "rodičem" je flex container, který jim říká, jak mají býti uspořádány.<br />
+
+  		<br />Properties:<br />
+  		<ul>
+  			<li>row-revers</li>
+  			<li>column</li>
+  			<li>column-reverse</li>
+  			<li>justify-content</li>
+  			<li>space-between</li>
+  			<li>space-around</li>
+  			<li>align-items</li>
+  			<li>align-self</li>
+  			<li>flex</li>
+  		</ul>
+  </div>
+
+  <span onclick="toggleInfo(16)">Media Queries</span>
+<hr />
+  <div class="info">
+  		Použití pro vytvoření responsivního layoutu při různých rozlišeních.
+
+  		Syntax = @Media (podmínka) {code}
+  </div>
 
 <br />
 </article>
+
+<aside class="aside-1">
+ <img src="../images/certificatecss.jpg" alt="Certificate" class="certificate" height="309" width="438" />
+</aside>
+
  <footer>
  	© Pavel Sušický 2017
  </footer>

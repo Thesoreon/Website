@@ -27,9 +27,40 @@
 	</nav>
 		<span class="Handle" onclick="closeMenu()">MENU</span>
 <article class="main">
-<br />	
+<h2>JAVASCRIPT</h2>
+ <span onclick="toggleInfo(0)">Output</span>
+<hr />
+  <div class="info">
+  	Vypsání do html elementu = innerHTML;<br />
+  	Vypsání do html outputu = document.write();<br />
+  	Vypsání do alert boxu = window.alert();<br />
+  	Vypsání do browser console = console.log();<br />
+  </div>
+
+<span onclick="toggleInfo(1)">Objects</span>
+<hr />
+  <div class="info">
+  	Objekty mohou obsahovat několik proměnných<br />
+  	Syntax = var name = {property: value, property: value, ...};	
+  </div>
+
+<span onclick="toggleInfo(2)">Scope</span>
+<hr />
+  <div class="info">
+  	Dva typy: local a global<br />
+  	Když inicializujeme proměnnou ve funkci bez deklarace automaticky se stává globální proměnnou.<br />
+  </div>
+
+<span onclick="toggleInfo(3)">Events</span>
+<hr />
+  <div class="info">
+  	Eventy jsou reakce na dění na HTML elementů.<br />
+  </div>
 </article>
 
+<aside class="aside-1">
+ <img src="../images/certificatejs.jpg" alt="Certificate" class="certificate" height="309" width="438" />
+</aside>
 
  <footer>
  	© Pavel Sušický 2017
