@@ -64,7 +64,7 @@
   	Syntax = var name = [value, value,...];<br />
   	Metody a vlastnosti polí = length, sort, push(), isArray(), toString(), join(), pop(), shift(), unshift(), splice(), concat(), slice()
   	Pristup do celeho pole = využití názvu pole<br />
-  	<div class="tip">Pole jsou datove typu OBJECT</div>
+  	<div class="tip">Pole jsou datoveho typu OBJECT</div>
   </div>
 
 <span onclick="toggleInfo(5)">Sorting an Array</span>
@@ -74,16 +74,26 @@
   	Pole se pomocí metody reverse() "otočí"<br />
   </div>
   
-<span onclick="toggleInfo(0)">Something</span>
+<span onclick="toggleInfo(6)">Type Conversion</span>
 <hr />
   <div class="info">
-  	
+  	Tři základní metody konverze: Number(), String(), Boolean(); <br />
+  	Datové typy: string, number, boolean, object, function; <br />
+  	Tři typy objektů: Object, Date, Array <br />
+  	Datové typy neobsahující hodnoty: null, undefined<br />
+
+  	<button onclick="TypeConversation()">TEST IT OUT!</button>
   </div>
 
-<span onclick="toggleInfo(0)">Something</span>
+<span onclick="toggleInfo(7)">Errors</span>
 <hr />
   <div class="info">
-  	
+  	Try statement - Vyzkouší kod<br />
+  	Catch statement - Postará se o error <br />
+  	Throw statement - Dovoluje vytvořit vlastní chyby<br />
+  	Finally statement - Provede kod bez ohledu na výsledku try a catch<br />
+
+  	<button onclick="TryAndCatch()">TEST IT OUT!</button>
   </div>
 
 <span onclick="toggleInfo(0)">Something</span>
@@ -110,6 +120,7 @@
  </footer>
 </div>
 	<script type="text/javascript" src="../script.js"></script>
+	<script type="text/javascript" src="../testingscript.js"></script>
 </body>
 
 </html>
