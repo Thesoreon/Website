@@ -10,7 +10,7 @@
   top: 0; 
   background-color: #3C3D3E; 
   list-style-type: none; /* This hides points before list items */ 
-  box-shadow: black 0px 3px 20px; /* This makes shadow under navigation */
+  box-shadow: black 0px 3px 10px; /* This makes shadow under navigation */
 }
 
 #navigation li {

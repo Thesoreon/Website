@@ -19,3 +19,9 @@ function TryAndCatch() {
 		document.write("<br />Proběhl try and catch + finally kod");
 	}
 }
+
+function Hoisting() {
+	x = 5;
+	document.write(x);
+	var x;
+}

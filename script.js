@@ -1,6 +1,9 @@
+"use strict";
 var isActive = true;
+var imgIndex = 0;
 var nav = document.getElementById("navigation");
-var info = document.getElementsByClassName("info");
+
+ImageGallery();
 
 function closeMenu() {
 
@@ -18,12 +21,12 @@ function closeMenu() {
 
 function toggleInfo(x) {
 
-	if(info[x].style.display == "block") {
-		info[x].style.display = "none";
-	}
-	else {
-		info[x].style.display = "block";
-	}
+	var info = document.getElementsByClassName("info")[x];
+
+	if(info.style.display == "block")
+		info.style.display = "none";
+	else
+		info.style.display = "block";
 }
 
 window.onresize = function() {
@@ -43,3 +46,21 @@ window.onresize = function() {
     	isActive = false;
     }
 };
+
+function ImageGallery() {
+
+	var images = document.getElementsByClassName("certificate");
+
+	for (var i = 0; i < images.length; i++) {
+		if(i != imgIndex)
+			images[i].style.display = "none";
+		else
+			images[i].style.display = "block";
+	}
+
+	imgIndex++;
+	if(imgIndex >= images.length)
+		imgIndex = 0;
+
+	setTimeout(ImageGallery, 5000);
+}
